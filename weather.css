@@ -1,0 +1,116 @@
+/* 
+
+rgb(20, 4, 4)
+
+*/
+:root {
+
+    --black: black;
+    --grey: rgb(97, 92, 92);
+    --white: whitesmoke;
+    --dBlue: darkblue;
+    --blue: rgb(2, 2, 163);
+    --oBlack: rgb(3, 3, 41);
+
+}
+
+* {
+
+    color: whitesmoke;
+    outline: blue;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, var(--black));
+        background-color: black;
+}
+
+.wrapper {
+    background-color: var(--grey);
+    color: white;
+    font-size: 16px;
+    width: 90vw;
+    max-width: 28em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    /* border: 3px solid var(--dBlue); */
+    top: 50%;
+    left: 50%;
+    border-radius: 30px;
+
+}
+
+.container {
+    width: 100%;
+    background: var(--dBlue);
+    padding: 3em 1.8em;
+    backdrop-filter: blur(10px);
+    border: 2px solid var(--grey);
+    border-radius: 30px;
+    box-shadow: 0 1.8em 3.5em var(--oBlack);
+}
+
+.shape {
+    position: absolute;
+    background-color: var(--blue);
+    backdrop-filter: blur(1.2em);
+    border: 2px solid var(--grey);
+    border-radius: 50%;
+}
+
+.shape-1 {
+    height: 13.5em;
+    width: 13.5em;
+    right: -7.5em;
+    top: 1.8em;
+}
+
+.shape-2 {
+    height: 11em;
+    width: 11em;
+    bottom: -3.7em;
+    left: -2.5em;
+}
+
+.search-container {
+    font-size: 1em;
+    display: grid ;
+    grid-template-columns: 9fr 3fr ;
+    gap: 1.25em;
+}
+
+button {
+    color: blue;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 8px 5px;
+    border-radius: 20px;
+    background-color: var(--oBlack);
+    border: none;
+}
+
+input {
+    background-color: black;
+    color: blue;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 8px 5px;
+    border-radius: 20px;
+    border: 3px solid white;
+    text-align: center;
+    
+}
+
+input:focus {
+    border-color: blueviolet;
+
+}
+
+
